@@ -10,6 +10,12 @@ set (CMAKE_CXX_COMPILER "/usr/bin/clang++")
 set(CMAKE_C_COMPILER "/usr/bin/clang")
 set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${CLANG_COVERAGE_COMPILE_FLAGS}" )
 
+include_directories(./3rd/gtest/include)
+link_directories(./3rd/gtest/lib)
+
+#使能测试
+enable_testing()
+
 add_subdirectory(cpp20)
 add_subdirectory(cpp17)
 add_subdirectory(cpp14)
