@@ -2,6 +2,7 @@
 include_directories(.)
 
 add_executable(thread thread.cc)
+add_executable(operator operator.cc)
 
 add_executable(CRTP test/CRTPTest.cc)
 target_link_libraries(CRTP gtest)
